@@ -3,17 +3,16 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>Z_RANGE</NAME>
-    <SUBC>1</SUBC>
+    <NAME>Z_SCREEN_E01</NAME>
+    <SUBC>I</SUBC>
     <RLOAD>P</RLOAD>
-    <FIXPT>X</FIXPT>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
    <TPOOL>
     <item>
      <ID>R</ID>
-     <ENTRY>Programa Z_RANGE</ENTRY>
-     <LENGTH>16</LENGTH>
+     <ENTRY>Include Z_SCREEN_E01</ENTRY>
+     <LENGTH>20</LENGTH>
     </item>
    </TPOOL>
   </asx:values>
