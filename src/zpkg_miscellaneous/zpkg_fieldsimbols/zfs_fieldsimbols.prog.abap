@@ -52,3 +52,5 @@ FIELD-SYMBOLS: <fs_generic> TYPE ANY.
 ASSIGN ld_text to <fs_generic>.
 
 BREAK-POINT.
+" How to get value from a GENERIC FIELD SIMBOL.
+*ASSIGN COMPONENT `CRIADO_POR` OF STRUCTURE is_data TO FIELD-SYMBOL(<fs_criado_por>).
