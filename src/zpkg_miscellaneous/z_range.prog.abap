@@ -18,7 +18,11 @@ LOOP AT lt_scarr INTO DATA(ls_scarr).
   APPEND wa_rng TO rng_table.
 ENDLOOP.
 
+SELECT * FROM scarr INTO TABLE @DATA(lt_scarr2) WHERE carrid IN @rng_table.
 BREAK-POINT.
 
-SELECT * FROM scarr INTO TABLE @DATA(lt_scarr2) WHERE carrid IN @rng_table.
+IF rng_table[ 1 ]-low IN rng_table.
+  MESSAGE 'Tem id no range' TYPE 'I'.
+ENDIF.
+
 BREAK-POINT.
