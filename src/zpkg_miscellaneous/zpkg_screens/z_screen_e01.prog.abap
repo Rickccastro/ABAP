@@ -8,7 +8,7 @@
 *&---------------------------------------------------------------------*
 MODULE pbo_1001 OUTPUT.
       SET PF-STATUS 'S1001'.
-      SET TITLEBAR  'T1001'.
+      SET TITLEBAR  'T1001P' WITH 'Parameter-1' 'Parameter-2'.
 ENDMODULE.
 
 MODULE pai_1001 INPUT.
