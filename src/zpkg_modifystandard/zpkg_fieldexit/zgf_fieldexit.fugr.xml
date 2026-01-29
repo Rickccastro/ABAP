@@ -10,7 +10,6 @@
    <FUNCTIONS>
     <item>
      <FUNCNAME>FIELD_EXIT_MATNR</FUNCNAME>
-     <SHORT_TEXT>Field Exit for MATNR Abap Playlist</SHORT_TEXT>
      <IMPORT>
       <RSIMP>
        <PARAMETER>INPUT</PARAMETER>

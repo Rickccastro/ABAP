@@ -1,0 +1,28 @@
+PROCESS BEFORE OUTPUT.
+  MODULE STATUS_0105.
+*
+PROCESS AFTER INPUT.
+  MODULE FCODE_0300.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
