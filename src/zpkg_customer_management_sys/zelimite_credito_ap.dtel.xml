@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZELIMITE_CREDITO_AP</ROLLNAME>
+    <DDLANGUAGE>P</DDLANGUAGE>
+    <DOMNAME>ZDLIMITE_CREDITO_AP</DOMNAME>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>Limite Credito</DDTEXT>
+    <REPTEXT>Limite Credito</REPTEXT>
+    <SCRTEXT_S>L.Credito</SCRTEXT_S>
+    <SCRTEXT_M>Limite Credito</SCRTEXT_M>
+    <SCRTEXT_L>Limite Credito</SCRTEXT_L>
+    <DTELMASTER>P</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>
