@@ -30,47 +30,74 @@ START-OF-SELECTION.
   PERFORM desbloquear.
 
 FORM desbloquear.
-  DATA: ls_varkey TYPE vim_enqkey.
-  ls_varkey = |{ sy-mandt } { p_kunnr }|.
+*  DATA: ls_varkey TYPE vim_enqkey.
+*  ls_varkey = |{ sy-mandt } { p_kunnr }|.
 
-  CALL FUNCTION 'DEQUEUE_E_TABLE'
+  CALL FUNCTION 'DEQUEUE_EZLOCKOBJ'
     EXPORTING
-*     MODE_RSTABLE       = 'E'
-      tabname = 'ZLOCKOBJECT'
-      varkey  = ls_varkey
-*     X_TABNAME          = ' '
-*     X_VARKEY           = ' '
-*     _SCOPE  = '3'
-*     _SYNCHRON          = ' '
-*     _COLLECT           = ' '
-    .
+*     MODE_ZLOCKOBJECT       = 'E'
+*     MANDT                  = SY-MANDT
+      KUNNR                  = p_kunnr
+*     X_KUNNR                = ' '
+*     _SCOPE                 = '3'
+*     _SYNCHRON              = ' '
+*     _COLLECT               = ' '
+            .
+
+" Generic
+*  CALL FUNCTION 'DEQUEUE_E_TABLE'
+*    EXPORTING
+**     MODE_RSTABLE       = 'E'
+*      tabname = 'ZLOCKOBJECT'
+*      varkey  = ls_varkey
+**     X_TABNAME          = ' '
+**     X_VARKEY           = ' '
+**     _SCOPE  = '3'
+**     _SYNCHRON          = ' '
+**     _COLLECT           = ' '
+*    .
 
 ENDFORM.
 
 
 FORM bloquear.
-  DATA: ls_varkey TYPE vim_enqkey.
+*  DATA: ls_varkey TYPE vim_enqkey.
 
   gd_bloqueado = ''.
 
-  ls_varkey = |{ sy-mandt } { p_kunnr }|.
+*  ls_varkey = |{ sy-mandt } { p_kunnr }|.
 
+    CALL FUNCTION 'ENQUEUE_EZLOCKOBJ'
+   EXPORTING
+*     MODE_ZLOCKOBJECT       = 'E'
+*     MANDT                  = SY-MANDT
+      KUNNR                  = p_kunnr
+*     X_KUNNR                = ' '
+*     _SCOPE                 = '2'
+*     _WAIT                  = ' '
+*     _COLLECT               = ' '
+   EXCEPTIONS
+     FOREIGN_LOCK           = 1
+     SYSTEM_FAILURE         = 2
+     OTHERS                 = 3
+            .
   " Generic
-  CALL FUNCTION 'ENQUEUE_E_TABLE'
-    EXPORTING
-*     MODE_RSTABLE   = 'E'
-      tabname        = 'ZLOCKOBJECT'
-      varkey         = ls_varkey
-*     X_TABNAME      = ' '
-*     X_VARKEY       = ' '
-*     _SCOPE         = '2'
-*     _WAIT          = ' '
-*     _COLLECT       = ' '
-    EXCEPTIONS
-      foreign_lock   = 1
-      system_failure = 2
-      OTHERS         = 3.
-  IF sy-subrc = 0.
+*  CALL FUNCTION 'ENQUEUE_E_TABLE'
+*    EXPORTING
+**     MODE_RSTABLE   = 'E'
+*      tabname        = 'ZLOCKOBJECT'
+*      varkey         = ls_varkey
+**     X_TABNAME      = ' '
+**     X_VARKEY       = ' '
+**     _SCOPE         = '2'
+**     _WAIT          = ' '
+**     _COLLECT       = ' '
+*    EXCEPTIONS
+*      foreign_lock   = 1
+*      system_failure = 2
+*      OTHERS         = 3.
+
+  IF sy-subrc EQ 0.
     gd_bloqueado = 'X'.
   ENDIF.
 
