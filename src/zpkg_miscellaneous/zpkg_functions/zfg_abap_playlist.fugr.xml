@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for ABAP Playlist</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_ABAP_PLAYLISTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_ABAP_PLAYLIST</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_DIVIDE_NUMBERS</FUNCNAME>
+     <SHORT_TEXT>Function to divide numbers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_VALUE1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_VALUE2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ED_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>DIVIDE_BY_ZERO</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_VALUE1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_VALUE2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DIVIDE_BY_ZERO</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Cannot divide a number with zero</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_SUM_NUMBERS</FUNCNAME>
+     <SHORT_TEXT>Function for sum two numbers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ID_VALUE1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_VALUE2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ED_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ID_VALUE1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_VALUE2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ED_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº inteiro com sinal 4 bytes</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
