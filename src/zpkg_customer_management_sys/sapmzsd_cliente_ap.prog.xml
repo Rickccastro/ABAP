@@ -421,12 +421,20 @@
     </DOC>
     <TIT>
      <RSMPE_TITT>
-      <CODE>T9000</CODE>
-      <TEXT>Cadastro do Cliente</TEXT>
+      <CODE>DEL</CODE>
+      <TEXT>Excluir Cliente</TEXT>
      </RSMPE_TITT>
      <RSMPE_TITT>
-      <CODE>T9001</CODE>
-      <TEXT>Modificando Cliente</TEXT>
+      <CODE>EDIT</CODE>
+      <TEXT>Modificação de cliente</TEXT>
+     </RSMPE_TITT>
+     <RSMPE_TITT>
+      <CODE>MOD</CODE>
+      <TEXT>Modificar Cliente</TEXT>
+     </RSMPE_TITT>
+     <RSMPE_TITT>
+      <CODE>NEW</CODE>
+      <TEXT>Cadastro do Cliente</TEXT>
      </RSMPE_TITT>
     </TIT>
    </CUA>

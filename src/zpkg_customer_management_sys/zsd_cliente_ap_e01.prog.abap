@@ -13,9 +13,9 @@ MODULE pbo_9000 OUTPUT.
 
   SET PF-STATUS 'S9000'.
   IF sy-tcode = 'ZSD001AP'.
-    SET TITLEBAR 'T9000'.
+    SET TITLEBAR 'NEW'.
   ELSEIF sy-tcode = 'ZSD002AP'.
-    SET TITLEBAR 'T9001'.
+    SET TITLEBAR 'MOD'.
 
     LOOP AT SCREEN.
       IF SCREEN-NAME = 'GS_CLIENTE-ZCLINR'.
@@ -34,6 +34,10 @@ ENDMODULE.
 MODULE pai_9000 INPUT.
   CASE gd_okcode.
     WHEN 'BACK'.
+      "Leave sai da transacao atual ser vier de um call transaction,
+      "Se não, não faz nada.
+      LEAVE.
+      "Volta p tela Anterior.
       LEAVE TO SCREEN 0.
     WHEN 'SAVE'.
       IF sy-tcode = 'ZSD001AP'.
