@@ -5,6 +5,8 @@ DATA: lt_tz_r     TYPE RANGE OF sairport-time_zone.
 DATA: lt_tvarvc   TYPE STANDARD TABLE OF tvarvc.
 DATA: lt_sairport TYPE STANDARD TABLE OF sairport.
 
+" Load Tables from transactions: STVARVC, STVARV
+
 BREAK-POINT.
 
 "Carregando valor
