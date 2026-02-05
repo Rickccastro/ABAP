@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service for ZDD_CHAMADOS'
+define service ZUI_BOPF_CHAMADOS {
+  expose ZDD_CHAMADOS;
+}
