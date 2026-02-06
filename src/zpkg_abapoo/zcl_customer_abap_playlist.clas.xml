@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CUSTOMER_ABAP_PLAYLIST</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Global class for customer</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CPF</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>GET ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_NAME</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>GET NAME OF CUSTOMER</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MD_CPF</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>ID of Customer</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_CPF</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>SET ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_NAME</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>SET NAME OF CUSTOMER</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CPF</CMPNAME>
+     <SCONAME>RD_CPF</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Caractere comprimento 11</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_CPF</CMPNAME>
+     <SCONAME>ID_CPF</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Caractere comprimento 11</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
