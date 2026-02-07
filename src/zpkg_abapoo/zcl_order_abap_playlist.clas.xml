@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ORDER_ABAP_PLAYLIST</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>Class for Exception test</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ITEM</CMPNAME>
+     <SCONAME>ID_MATNR</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº inteiro com sinal 4 bytes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ITEM</CMPNAME>
+     <SCONAME>ID_PRICE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Valor líquido na moeda do documento</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ITEM</CMPNAME>
+     <SCONAME>ID_QTDE</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Nº inteiro com sinal 4 bytes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_ITEM</CMPNAME>
+     <SCONAME>ZCX_INVALID_MATERIAL</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Exception Class Abap Playlist</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DYNAMIC_CHECK</CMPNAME>
+     <SCONAME>ZCX_DYNAMIC_CHECK</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Dynamic Class for ABAP Playlist</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>STATIC_CHECK</CMPNAME>
+     <SCONAME>ZCX_STATIC_CHECK</SCONAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Static Check Class for ABAP PLAYLIST</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
