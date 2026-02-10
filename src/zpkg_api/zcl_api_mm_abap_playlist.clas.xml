@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_API_MM_ABAP_PLAYLIST</CLSNAME>
+    <LANGU>P</LANGU>
+    <DESCRIPT>API para Apontamento de Horas</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>DELETE_MATERIAL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>DELETE Material</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MATERIAL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>GET Material By ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MATERIALS</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>GET Material</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POST_MATERIAL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>POST Material</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PUT_MATERIAL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>PUT Material</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

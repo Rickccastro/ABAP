@@ -9,6 +9,44 @@
    </INCLUDES>
    <FUNCTIONS>
     <item>
+     <FUNCNAME>ZFM_DELETE_API_ABAP_PLAYLIST</FUNCNAME>
+     <SHORT_TEXT>Function to delete material</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PLANT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPI_MARC-PLANT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIMATHEAD-MATERIAL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_SAVE_DATA</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PLANT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segmento de cabeçalho com informação de controle</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Nº do material (18 caracteres)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_SAVE_DATA</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Erro na deleção</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
      <FUNCNAME>ZFM_DIVIDE_NUMBERS</FUNCNAME>
      <SHORT_TEXT>Function to divide numbers</SHORT_TEXT>
      <IMPORT>
@@ -55,6 +93,76 @@
        <PARAMETER>DIVIDE_BY_ZERO</PARAMETER>
        <KIND>X</KIND>
        <STEXT>Cannot divide a number with zero</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_POST_API_ABAP_PLAYLIST</FUNCNAME>
+     <SHORT_TEXT>Create a material function</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>MAT_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIMATDOA-MATL_TYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MAT_IND_SECTOR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIMATDOA-IND_SECTOR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MATL_DESC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPI_MAKT-MATL_DESC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BASE_UOM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPI_MARA-BASE_UOM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MATL_GROUP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPI_MARA-MATL_GROUP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_MAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARA</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>MAT_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tipo de material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MAT_IND_SECTOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Setor industrial</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MATL_DESC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Texto breve de material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BASE_UOM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Unidade de medida básica</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MATL_GROUP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Grupo de mercadorias</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_MAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Dados gerais de material</STEXT>
       </RSFDO>
      </DOCUMENTATION>
     </item>
